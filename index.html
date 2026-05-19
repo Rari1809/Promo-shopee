@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lagi nyiapin promo terbaik buat kamu...</title>
 
-  <meta http-equiv="refresh" content="2; url=https://s.shopee.co.id/5VSIFnovCd">
+  <meta property="og:title" content="Spesial Promo & Diskon Terbaik! 🎁">
+  <meta property="og:description" content="Cek harga promo selengkapnya di sini sebelum kehabisan.">
+  <meta property="og:image" content="https://i.ibb.co/0yX1K7b/promo-banner.jpg">
+  <meta property="og:type" content="website">
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
@@ -161,7 +164,7 @@
       100% { left: 200%; }
     }
 
-    /* Status Text (BAYANGAN DIAPUS) */
+    /* Status Text */
     .status {
       font-size: 0.85rem;
       color: var(--muted);
@@ -171,10 +174,9 @@
     .status span {
       color: var(--orange);
       font-weight: 700;
-      /* Animasi bayangan/glow sudah dihapus biar bersih solid */
     }
 
-    /* Manual link fallback (BACKGROUND & FLOATING BUTTON) */
+    /* Manual link fallback */
     .fallback {
       margin-top: 1.8rem;
       font-size: 0.85rem;
@@ -184,23 +186,21 @@
     
     .fallback a {
       color: var(--orange);
-      font-weight: 800; /* Super Bold */
+      font-weight: 800;
       text-decoration: none;
-      display: inline-block; /* Wajib ada biar efek melayang jalan */
+      display: inline-block;
       background: var(--orange-soft);
       padding: 6px 14px;
       border-radius: 99px;
       margin-top: 0.5rem;
       box-shadow: 0 4px 10px rgba(238, 77, 45, 0.15);
-      
-      /* Animasi Melayang khusus Link Manual */
       animation: floatLink 2.5s ease-in-out infinite;
       transition: all 0.2s ease;
     }
     
     @keyframes floatLink {
       0%, 100% { transform: translateY(0) scale(1); }
-      50% { transform: translateY(-5px) scale(1.03); } /* Melayang naik & membesar dikit */
+      50% { transform: translateY(-5px) scale(1.03); }
     }
 
     .fallback a:hover { 
@@ -246,6 +246,7 @@
 
     document.getElementById("manual-link").href = AFFILIATE_URL;
 
+    // JavaScript ini yang ngerjain auto-redirect tanpa kebaca Facebook
     setTimeout(() => {
       window.location.href = AFFILIATE_URL;
     }, 2000);
